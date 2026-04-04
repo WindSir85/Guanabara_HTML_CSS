@@ -24,12 +24,13 @@ header{
 }
 
 header > h1{
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     flex: 0 0 200px;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
 }
 
 header > nav{
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -51,9 +52,24 @@ header > nav > a:hover{
 }
 
 main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+main > section{
+    width: 70%;
     background-color: white;
-    margin: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+main > section > h2{
+    margin-bottom: 20px;
+}
+
+main > section > p{
+    text-align: justify;
+    padding: 5px;
 }

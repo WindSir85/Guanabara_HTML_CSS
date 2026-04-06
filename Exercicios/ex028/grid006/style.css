@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.container{
+    display: grid;
+    grid-template: repeat(3, 80px) / repeat(4, 1fr);
+    grid-auto-flow: row;
+    place-items: normal normal;
+    place-content: normal normal;
+}
+
+#cx1{
+    grid-area: 1 / 1 / 2 / 5;
+    background-color: lightcoral;
+}
+
+#cx2{
+    grid-area: 2 / 1 / 4 / 3;
+    background-color: lightblue;
+}
+
+#cx3{
+    grid-area: 2 / 3 / 4 / 5;
+    background-color: lightgreen;
+}
